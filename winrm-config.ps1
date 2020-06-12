@@ -1,4 +1,4 @@
-#This script configures winrm to only listen on HTTPS and enables a self-signed certificate to wor
+#This script configures winrm to only listen on HTTPS and enables a self-signed certificate to be used with the SSL transport.
 
 $hostname = $env:COMPUTERNAME
 $serverCert = New-SelfSignedCertificate -CertStoreLocation Cert:\LocalMachine\My -DnsName $hostname
